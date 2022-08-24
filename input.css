@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+    html {
+      font-family: Poppins , sans-serif;
+    }
+  } */
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'agency fb';
+    background: url('./img/reindeer.png') no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    /* overflow: hidden; */
+
+}  
+.logo{
+    flex: 0 0 50%;
+}
+.menu-links ul{
+    width: 100%;
+}
+.scrolldown::before{
+    display: inline-block;
+    content: "";
+    border-top: 1px solid #000;
+    width: 65px;
+    margin: 0 10px 0 10px;
+    transform: translateY(10px);
+}
