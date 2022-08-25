@@ -4,7 +4,7 @@
 
 /* @layer base {
     html {
-      font-family: Poppins , sans-serif;
+      font-family: Poppins , sans-serif; 
     }
   } */
 
@@ -15,7 +15,7 @@ body{
     background: url('./img/reindeer.png') no-repeat;
     background-position: 50%;
     background-size: cover;
-    /* overflow: hidden; */
+    overflow: hidden;
 
 }  
 .logo{
@@ -54,8 +54,6 @@ body{
 .ellipse.thin{
     width: 100%;
     height: 100%;
-    border-width: 1px;
-    border: color #494949;
     opacity: .5;
 }
 
@@ -69,8 +67,22 @@ body{
     left: 12px;
 }
 
-ellipse.yellow{
+.ellipse.yellow{
     width: 93%;
     height: 93%;
-    
+    border-width: 10px;
+    border-color:#ffeb00 transparent;
+    transform: rotate(-45deg);
+    top: 12px;
+    left: 12px;
+    animation: ellipseRotate 15s ease-in-out infinite;
+}
+
+@keyframes ellipseRotate {
+    0%{
+        transform: rotate(-45deg);
+    }
+    100%{
+        transform: rotate(405deg);
+    }
 }
